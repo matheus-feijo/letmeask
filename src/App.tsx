@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button } from './components/Button';
+import { Home } from './pages/Home';
+import "./styles/global.scss";
 
 function App() {
   return (
     <div className="App">
-        <h1>HELLO WORLDd</h1>
-        <Button text='testando botao'></Button>
-        <Button></Button>
+        <Home></Home>
     </div>
   );
 }
