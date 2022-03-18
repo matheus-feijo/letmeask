@@ -19,6 +19,7 @@ strong{
     color: #ffff;
     display: inline-block;
     width: 75%;
+    line-height: 42px;
 }
 img{
     display: block;
@@ -45,30 +46,31 @@ main{
 }
 
 .div-risco{
-    padding: 4vh 0vh;
+    margin: 35px 0;
+    display: flex;
+    align-items: center;
+    color: #a8a8b3;
+
+    &::before{
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: #a8a8b3;
+        margin-right: 16px;
+    }
+
+    &::after{
+        content: "";
+        flex: 1;
+        height: 1px;
+        background-color: #a8a8b3;
+        margin-left: 16px;
+    }
 }
 
 .img-icon-google{
     display: initial;
     margin-right: 10px;
-}
-
-button{
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: 0;
-    color: #fff;
-    font: 400 20px "roboto",sans-serif;
-}
-
-.button-entrar{
-    background-color: #835AFD;
-}
-
-.button-google-icon{
-    background-color: #EA4335;
 }
 
 p{
@@ -77,4 +79,5 @@ p{
     font: 400 24px "roboto",sans-serif;
     width: 75%;
     margin-top: 3vh;
+    line-height: 32px;
 }

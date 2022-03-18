@@ -2,6 +2,7 @@ import illustration from "../assets/images/illustration.svg"
 import logo from "../assets/images/logo.svg";
 import googleIcon from "../assets/images/google-icon.svg";
 import "../styles/home.scss";
+import { Button } from "../components/Button";
 
 export function Home(){
     return(
@@ -18,27 +19,27 @@ export function Home(){
 
                 <div className="form-enter">
                     <img src={logo} alt="logo" className="logo"></img>
-                    <button className="button-google-icon">
+                    <Button name="button-google-icon">
                         <img src={googleIcon} alt="iconGoogle" className="img-icon-google"></img>
                         Crie sua sala com o google
-                    </button>
+                    </Button>
                 
                     <div className="div-risco">ou entre em uma sala</div>
-                    <form>
+                    <form onSubmit={(e)=>e.preventDefault()}> 
                         <input 
                             type="text"
                             placeholder="digite seu codigo"
                         />
 
-                        <button 
-                            className="button-entrar"
+                        <Button 
+                            name="button-entrar"
                             type="submit"
                         >
                             Entrar na sala
-                        </button>
+                        </Button>
                     </form>
                 </div>
-                
+
             </main>
 
         </div>
