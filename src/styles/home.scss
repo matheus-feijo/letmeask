@@ -73,6 +73,10 @@ main{
     margin-right: 10px;
 }
 
+p a{
+    color: rgba(229, 89, 249, 1);
+}
+
 p{
     color: #F8F8F8;
     opacity: 0.7;
@@ -80,4 +84,16 @@ p{
     width: 75%;
     margin-top: 3vh;
     line-height: 32px;
+}
+
+.msg-new-room{
+    color: black;
+    font:bold 24px "roboto",sans-serif;
+    width: 100%;
+}
+
+.msg-sala-existente{
+    color: black;
+    font:400 14px "roboto",sans-serif;
+    width: 100%;
 }

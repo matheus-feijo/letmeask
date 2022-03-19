@@ -1,20 +1,11 @@
-import {useHistory} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 import illustration from "../assets/images/illustration.svg"
 import logo from "../assets/images/logo.svg";
-import googleIcon from "../assets/images/google-icon.svg";
 import "../styles/home.scss";
 import { Button } from "../components/Button";
-import { useState } from "react";
 
-
-export function Home(){
-    const history = useHistory();
-    const handleCreateRoom = async() =>{
-        //history.push("/rooms/new");
-    }
-
-    
+export function NewRoom(){
     return(
         <div>
             <aside className="background">
@@ -28,15 +19,13 @@ export function Home(){
             <main>
                 <div className="form-enter">
                     <img src={logo} alt="logo" className="logo"></img>
-                    <Button name="button-google-icon" onClick={handleCreateRoom}>
-                        <img src={googleIcon} alt="iconGoogle" className="img-icon-google"></img>
-                        Crie sua sala com o google
-                    </Button>
+
+                    <p className="msg-new-room">Crie uma nova sala</p>
                     <div className="div-risco">ou entre em uma sala</div>
                     <form onSubmit={(e)=>{e.preventDefault()}}> 
                         <input 
                             type="text"
-                            placeholder="digite seu codigo"
+                            placeholder="Nome da sala"
                         />
                         <Button 
                             name="button-entrar"
@@ -45,6 +34,7 @@ export function Home(){
                             Entrar na sala
                         </Button>
                     </form>
+                    <p className="msg-sala-existente">Quer entrar em uma sala ja existente? <Link to="/">Clique aqui</Link></p>
                 </div>
             </main>
         </div>
