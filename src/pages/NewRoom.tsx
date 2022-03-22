@@ -4,8 +4,12 @@ import illustration from "../assets/images/illustration.svg"
 import logo from "../assets/images/logo.svg";
 import "../styles/home.scss";
 import { Button } from "../components/Button";
+import { useAuth } from "../hooks/useAuth";
 
 export function NewRoom(){
+
+    const {user} = useAuth();
+
     return(
         <div>
             <aside className="background">
@@ -19,7 +23,6 @@ export function NewRoom(){
             <main>
                 <div className="form-enter">
                     <img src={logo} alt="logo" className="logo"></img>
-
                     <p className="msg-new-room">Crie uma nova sala</p>
                     <div className="div-risco">ou entre em uma sala</div>
                     <form onSubmit={(e)=>{e.preventDefault()}}> 

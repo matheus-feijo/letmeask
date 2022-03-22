@@ -5,14 +5,24 @@ import logo from "../assets/images/logo.svg";
 import googleIcon from "../assets/images/google-icon.svg";
 import "../styles/home.scss";
 import { Button } from "../components/Button";
-import { useState } from "react";
+import { useAuth } from "../hooks/useAuth";
 
 
 export function Home(){
     const history = useHistory();
+    const { user,signIn} = useAuth();
+
+
     const handleCreateRoom = async() =>{
-        //history.push("/rooms/new");
+        //
+        if(!user){
+            await signIn();
+        }
+
+        history.push("/rooms/new");
     }
+
+    
 
     
     return(
