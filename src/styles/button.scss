@@ -1,28 +1,35 @@
-button{
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    border: 0;
-    color: #fff;
-    font: 400 20px "roboto",sans-serif;
-    cursor: pointer;
-
-    &:not(:disabled):hover{
-        filter: brightness(0.9);
+#customize-buttons{
+    button{
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: 0;
+        color: #fff;
+        font: 400 20px "roboto",sans-serif;
+        cursor: pointer;
+    
+        &:not(:disabled):hover{
+            filter: brightness(0.9);
+        }
+        
+        &:disabled{
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
     }
     
-    &:disabled{
-        opacity: 0.6;
-        cursor: not-allowed;
+    .button-entrar{
+        background-color: #835AFD;
+    }
+    
+    .button-google-icon{
+        background-color: #EA4335;
+    }
+
+    .button-room-question{
+        background-color: #835AFD;
+        font:500 16px "roboto";
+        width: 150px;
     }
 }
-
-.button-entrar{
-    background-color: #835AFD;
-}
-
-.button-google-icon{
-    background-color: #EA4335;
-}
-

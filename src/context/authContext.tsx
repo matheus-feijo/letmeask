@@ -2,6 +2,7 @@ import { useState } from "react";
 import {createContext} from "react";
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from "firebase/auth";
 import { useEffect } from "react";
+import { ReactNode } from "react";
 
 type User = {
     id:string;
@@ -15,7 +16,7 @@ type authProps = {
 }
 
 type authContextProvider= {
-    children: JSX.Element[]
+    children: ReactNode
 }
 
 export const authContext = createContext({} as authProps);

@@ -1,0 +1,62 @@
+#page-room{
+    .header-room-page{
+        height: 89px;
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        padding: 20px 200px;
+    }
+    
+    
+    
+    .main-content-room-page{
+        padding: 60px 500px 0px 400px;
+        max-width: 190vh;
+    
+    }
+    
+    .title-room{
+        font: bold 24px "Roboto";
+        display: inline;
+        padding-right: 40px;
+        line-height: 36px;
+    }
+    
+    .text-form-page{
+        width: 100%;
+        margin-top: 50px;
+        height: 133px;
+        border-radius: 8px;
+        background-color: #fefefe;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        resize: vertical;
+        min-height: 130px;
+        border: 1px;
+        padding: 16px 12px;
+        
+    }
+
+    .form-footer{
+        display: flex;
+        margin-top: 20px;
+
+        >span{
+            width: 100%;
+            color: rgba(115, 115, 128, 1);
+
+            >button{
+                background-color: transparent;
+                border: none;
+                color: rgba(131, 90, 253, 1);
+                text-decoration: underline;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        
+
+        
+    }
+}
