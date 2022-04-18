@@ -13,6 +13,37 @@
         padding: 60px 500px 0px 400px;
         max-width: 190vh;
     
+        .question-list{
+            margin-top: 32px;
+
+            button{
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+                transition: filter 0.2s;
+
+                & :hover{
+                    filter: brightness(0.8);
+                }
+            }
+
+            & .like-button{
+                display: flex;
+                align-items: flex-end;
+                color: #737380;
+                gap: 8px;
+            }
+
+            & .liked{
+                color: #835afd;
+
+                svg path{
+                    stroke: #835afd;
+                }
+            }
+
+            
+        }
     }
     
     .title-room{
@@ -76,7 +107,6 @@
         }
 
         
-
         
     }
 }

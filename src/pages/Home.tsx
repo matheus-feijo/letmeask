@@ -43,6 +43,12 @@ export function Home(){
             return;
         }
 
+        
+        if((await room).val().endedAt){
+            alert("sala ja esta fechada");
+            return
+        }
+
         history.push(`/rooms/${roomCode}`);
 
     }
